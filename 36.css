@@ -1,0 +1,223 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: lawngreen;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#container {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+#res {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(247, 163, 255);
+    border: 5px solid Blue;
+    border-radius: 30px;
+    max-width: 90vw !important;
+}
+
+#l2,
+#l3 {
+    display: none;
+}
+
+.heading {
+    font-family: cursive;
+    color: cyan;
+    font-style: italic;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+.lb1 {
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+input {
+    background-color: gray;
+    font-weight: bold;
+    border: 3px solid black;
+    max-width: 60vw;
+}
+
+.back {
+    width: 5vw;
+    height: 5vw;
+    min-width: 100px;
+    min-height: 100px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+.lb1,
+input {
+    font-family: sans-serif;
+    margin: 15px 0px 15px 0px;
+    padding: 5px;
+}
+
+.btn {
+    background-color: cyan;
+    color: blue;
+    font-weight: bold;
+    padding: 6px 9px 6px 9px;
+    border: 3px solid green;
+    margin: 5px;
+    border-width: 5px 7px 7px 5px;
+    border-right-color: rgb(0, 87, 0);
+    border-bottom-color: rgb(0, 87, 0);
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 228, 228);
+    color: rgb(0, 0, 221);
+    cursor: pointer;
+}
+
+.login div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+#section1 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#label {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: green;
+    text-align: center;
+    text-shadow: cyan 3px 3px 0px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+}
+
+#btn2 {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#btn1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid blue;
+    background-color: pink;
+    padding: 1px;
+}
+
+#container tr td {
+    border: 3px solid blue;
+    width: 50px;
+    height: 50px;
+    color: green;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: pink;
+    padding: 0px;
+    margin: 2px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#bingo {
+    display: none;
+    flex-wrap: nowrap;
+    border: 3px solid green;
+    background-color: lawngreen;
+}
+
+#bingo label {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: cyan;
+    color: blue;
+    padding: 3px;
+}
+
+.float {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#float {
+    display: none;
+    flex-direction: column;
+    border: 5px solid green;
+    background-color: cyan;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#float div {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px;
+    border: 3px solid red;
+    background-color: lawngreen;
+}
+
+#float div label {
+    text-align: center;
+    margin: 5px;
+    border: 2px solid blue;
+    background-color: pink;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: green;
+    padding: 9px;
+}
+
+#section2 {
+    display: none;
+}

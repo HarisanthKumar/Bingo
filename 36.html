@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="../css/36.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</head>
+
+<body>
+    <div class="login" id="l1">
+        <label class="heading" id="heading1">Play Bingo</label>
+        <div>
+            <button class="btn" onclick="create()">Create</button>
+            <button class="btn" onclick="join()">Join</button>
+        </div>
+    </div>
+    <div class="login" id="l2">
+        <img class="back" onclick="back()" src="../media/prev.png">
+        <label class="heading" id="heading2">Play Bingo</label>
+        <label class="lb1">Enter Your Name :</label>
+        <input type="text" maxlength="15" id="input1" placeholder="Enter Your Name">
+        <button class="btn" onclick="create_i()">Create</button>
+    </div>
+    <div class="login" id="l3">
+        <img class="back" onclick="back()" src="../media/prev.png">
+        <label class="heading" id="heading3">Play Bingo</label>
+        <label class="lb1">Enter Your Name :</label>
+        <input type="text" maxlength="15" id="input2" placeholder="Enter Your Name">
+        <label class="lb1">Enter Game Id :</label>
+        <input type="text" maxlength="6" id="input3" placeholder="Enter Game Id">
+        <button class="btn" onclick="join_i()">Join</button>
+    </div>
+    <div id="float">
+        <div>
+            <label>Player 1 :</label>
+            <label id="p1"></label>
+        </div>
+        <div>
+            <label>Player 2 :</label>
+            <label id="p2"></label>
+        </div>
+    </div>
+    <section id="section1">
+        <label id="label"></label>
+        <div id="bingo">
+            <label id="bingo1">B</label>
+            <label id="bingo2">I</label>
+            <label id="bingo3">N</label>
+            <label id="bingo4">G</label>
+            <label id="bingo5">O</label>
+        </div>
+        <button class="btn" onclick="leave()" id="btn1">Leave</button>
+        <button class="btn" onclick="begin()" id="btn2">Start</button>
+        <table id="container">
+            <tr>
+                <td id="btn_1" onclick="addstuff(1)"></td>
+                <td id="btn_2" onclick="addstuff(2)"></td>
+                <td id="btn_3" onclick="addstuff(3)"></td>
+                <td id="btn_4" onclick="addstuff(4)"></td>
+                <td id="btn_5" onclick="addstuff(5)"></td>
+            </tr>
+            <tr>
+                <td id="btn_6" onclick="addstuff(6)"></td>
+                <td id="btn_7" onclick="addstuff(7)"></td>
+                <td id="btn_8" onclick="addstuff(8)"></td>
+                <td id="btn_9" onclick="addstuff(9)"></td>
+                <td id="btn_10" onclick="addstuff(10)"></td>
+            </tr>
+            <tr>
+                <td id="btn_11" onclick="addstuff(11)"></td>
+                <td id="btn_12" onclick="addstuff(12)"></td>
+                <td id="btn_13" onclick="addstuff(13)"></td>
+                <td id="btn_14" onclick="addstuff(14)"></td>
+                <td id="btn_15" onclick="addstuff(15)"></td>
+            </tr>
+            <tr>
+                <td id="btn_16" onclick="addstuff(16)"></td>
+                <td id="btn_17" onclick="addstuff(17)"></td>
+                <td id="btn_18" onclick="addstuff(18)"></td>
+                <td id="btn_19" onclick="addstuff(19)"></td>
+                <td id="btn_20" onclick="addstuff(20)"></td>
+            </tr>
+            <tr>
+                <td id="btn_21" onclick="addstuff(21)"></td>
+                <td id="btn_22" onclick="addstuff(22)"></td>
+                <td id="btn_23" onclick="addstuff(23)"></td>
+                <td id="btn_24" onclick="addstuff(24)"></td>
+                <td id="btn_25" onclick="addstuff(25)"></td>
+            </tr>
+        </table>
+        <div class="float">
+            <button class="btn" onclick="reload()">Reload</button>
+            <button class="btn" onclick="save()">Save</button>
+        </div>
+    </section>
+    <div id="res"></div>
+    <div id="modalbgcover">
+        <div id="modal">
+            <div id="title"></div>
+            <hr id="modalhr">
+            <div id="content1"></div>
+            <hr id="modalhr3">
+            <span id="spanmodal">
+                <button id="yes" onclick="yes()">Yes</button>
+                <button id="no" onclick="no()">No</button>
+                <button id="close" onclick="close3()">&times;</button>
+            </span>
+        </div>
+    </div>
+
+</body>
+<style id="style1"></style>
+<style id="style2"></style>
+<script src="../js/36.js"></script>
+
+</html>
